@@ -11,24 +11,3 @@ https://drive.google.com/open?id=16RQztUqCfJOlbooHqYlJrp6Q7iL65uZB
 
 Here is some sample code in Python that can be used to apply Association Rule Mining in order to identify relationships between independent continuous variables and dependent continuous variables:
 
-#import the necessary packages
-import numpy as np
-import pandas as pd
-from mlxtend.frequent_patterns import apriori
-
-#load the data
-data = pd.read_csv('data.csv')
-
-#convert the data into a form suitable for the apriori algorithm
-transaction_data = []
-for i in range(0, data.shape[0]):
-    temp = []
-    for j in range(0, data.shape[1]):
-        temp.append(str(data.values[i,j]))
-    transaction_data.append(temp)
-
-#apply the apriori algorithm to the data
-rules = apriori(transaction_data, min_support = 0.3, min_confidence = 0.8, min_lift = 3, min_length = 2)
-
-#output the rules
-print(rules)
