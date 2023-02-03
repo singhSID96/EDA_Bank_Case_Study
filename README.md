@@ -8,6 +8,3 @@ Business Objectives : The company wants to understand the driving factors (or dr
 
 Download the dataset from the link given as below. 
 https://drive.google.com/open?id=16RQztUqCfJOlbooHqYlJrp6Q7iL65uZB
-
-Here is some sample code in Python that can be used to apply Association Rule Mining in order to identify relationships between independent continuous variables and dependent continuous variables:
-
